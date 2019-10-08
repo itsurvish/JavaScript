@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>BMI Calculator</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scriptbmi.js"></script>
+    </head>
+    <body>
+        <header><img src="images/logo.png"><h1>Go Healthy</h1></header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="healthy.html">Healthy Food</a></li>
+                <li><a href="unhealthy.html">Unhealthy Food</a></li>
+                <li><a href="bmi.html">BMI</a></li>
+                <li><a href="calorie.html">Calories you need</a></li>
+                <li><a href="contact.html">About Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Calculate your BMI(Body Mass index)</h2><br>
+            <p id="bmip">Body Mass Index (BMI) is a measure of body fat based on height and weight.</p>
+
+            <h3>How to calculate Body Mass Index</h3>
+            <p>Body Mass Index is a simple calculation using a person’s height and weight. The formula is BMI = kg/m2 where kg is a person’s weight in kilograms and m2 is their height in metres squared.</p>
+
+            <p>A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. BMI applies to most adults 18-65 years.</p>
+
+            <h3>Why isn't BMI used for muscle builders, long-distance athletes, pregnant women, the elderly or young children?</h3>
+            <p>BMI is not used for muscle builders, long distance athletes, pregnant women, the elderly or young children. This is because BMI does not take into account whether the weight is carried as muscle or fat, just the number. Those with a higher muscle mass, such as athletes, may have a high BMI but not be at greater health risk. Those with a lower muscle mass, such as children who have not completed their growth or the elderly who may be losing some muscle mass may have a lower BMI. During pregnancy and lactation, a woman's body composition changes, so using BMI is not appropriate.</p>
+         <form name="bmiForm">
+Your Weight(kg): <input type="text" name="weight" size="10"><br />
+Your Height(cm): <input type="text" name="height" size="10"><br />
+<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+Your BMI: <input type="text" name="bmi" size="10"><br />
+This Means: <input type="text" name="meaning" size="25"><br />
+<input type="reset" value="Reset" />
+</form>
+        </main>
+        
+        <footer>Copyright@2018 Go Healthy</footer>
+    </body>
+</html>
